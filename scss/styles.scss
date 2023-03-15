@@ -5,6 +5,7 @@ $black_color: #434343;
 * {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -13,6 +14,10 @@ $black_color: #434343;
 body {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     header {
         width: 100%;
@@ -23,6 +28,7 @@ body {
         flex-direction: column;
         align-items: center;
 
+        // Навигация
         .nav {
             width: 100%;
             max-width: 1288px;
@@ -37,6 +43,7 @@ body {
                 font-weight: 700;
             }
 
+            // Текст навигации
             ul {
                 list-style: none;
                 width: 100%;
@@ -47,9 +54,156 @@ body {
             }
         }
 
+        //Основной текст шапки
+        .main-text {
+            margin-top: 84px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
 
-        
+            h1 {
+                font-weight: 700;
+                font-size: 52px;
+                line-height: 78px;
+            }
+
+            p {
+                margin-top: 16px;
+                font-weight: 500;
+            }
+
+            // Кнопка
+            button {
+                width: 169px;
+                height: 72px;
+                background-image: url('../photo/contact_us_button.png');
+                margin-top: 32px;
+                border: none;
+            }
+        }        
     }
 
+    // Лицензия компании
+    .about-company {
+        margin-top: 113px;
+        width: 100%;
+        max-width: 1243px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+
+        // Первая сетка
+        .img-grid1 {
+            display: grid;
+            grid-template-columns: minmax(100px,310px) minmax(5px, 20px) minmax(100px, 310px);
+            grid-template-rows: repeat(104, 4px);
+
+            &__item1 {
+                grid-row-start: span 60;
+                background: url('../photo/check_1.png') center/cover, no-repeat;
+            }
+
+            &__item2 {
+                grid-row: 66 / 105;
+                background: url('../photo/check_3.png') center/cover, no-repeat;
+            }
+
+            &__item3 {
+                grid-row: span 39;
+                grid-column: 3  / 4;
+                background: url('../photo/check_2.png') center/cover, no-repeat;
+            }
+
+            &__item4 {
+                grid-row: 45 / 105;
+                grid-column: 3 / 4;
+                background: url('../photo/check_4.png') center/cover, no-repeat;
+            }
+        }
+
+        .about-text {
+            width: 100%;
+            max-width: 473px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            h1 {
+                color: $blue_color;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                color: $black_color;
+                margin-top: 16px;
+            }
+
+            h3 {
+                color: $black_color;
+                font-weight: 500;
+                margin-top: 16px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 16px;
+
+
+                li {
+                    color: $blue_color;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                width: 158px;
+                height: 72px;
+                margin-top: 32px;
+                background-image: url('../photo/see_more_button.png');
+                border: none;
+            }
+        }
+    }
+
+    // Кнопка лиценции
+    .license {
+        width: 168px;
+        height: 168px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        background-color: #FFFFFF;
+
+        left: -300px;
+        top: -290px;
+
+        
+        img {
+            margin-top: -13px;
+        }
+
+        .lic-name {
+            color: $blue_color;
+            font-weight: 500;
+            
+        }
+    }
+
+    .our-works {
+        
+    }
 
 }

@@ -2,6 +2,7 @@
 * {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -10,6 +11,19 @@
 body {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 body header {
   width: 100%;
@@ -60,4 +74,162 @@ body header .nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+body header .main-text {
+  margin-top: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .main-text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+}
+body header .main-text p {
+  margin-top: 16px;
+  font-weight: 500;
+}
+body header .main-text button {
+  width: 169px;
+  height: 72px;
+  background-image: url("../photo/contact_us_button.png");
+  margin-top: 32px;
+  border: none;
+}
+body .about-company {
+  margin-top: 113px;
+  width: 100%;
+  max-width: 1243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body .about-company .img-grid1 {
+  display: grid;
+  grid-template-columns: minmax(100px, 310px) minmax(5px, 20px) minmax(100px, 310px);
+  grid-template-rows: repeat(104, 4px);
+}
+body .about-company .img-grid1__item1 {
+  grid-row-start: span 60;
+  background: url("../photo/check_1.png") center/cover, no-repeat;
+}
+body .about-company .img-grid1__item2 {
+  grid-row: 66/105;
+  background: url("../photo/check_3.png") center/cover, no-repeat;
+}
+body .about-company .img-grid1__item3 {
+  grid-row: span 39;
+  grid-column: 3/4;
+  background: url("../photo/check_2.png") center/cover, no-repeat;
+}
+body .about-company .img-grid1__item4 {
+  grid-row: 45/105;
+  grid-column: 3/4;
+  background: url("../photo/check_4.png") center/cover, no-repeat;
+}
+body .about-company .about-text {
+  width: 100%;
+  max-width: 473px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .about-company .about-text h1 {
+  color: #056088;
+  font-size: 24px;
+  font-weight: 700;
+}
+body .about-company .about-text p {
+  color: #434343;
+  margin-top: 16px;
+}
+body .about-company .about-text h3 {
+  color: #434343;
+  font-weight: 500;
+  margin-top: 16px;
+}
+body .about-company .about-text ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+body .about-company .about-text ul li {
+  color: #056088;
+  font-weight: 700;
+  font-size: 20px;
+}
+body .about-company .about-text button {
+  width: 158px;
+  height: 72px;
+  margin-top: 32px;
+  background-image: url("../photo/see_more_button.png");
+  border: none;
+}
+body .license {
+  width: 168px;
+  height: 168px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #FFFFFF;
+  left: -300px;
+  top: -290px;
+}
+body .license img {
+  margin-top: -13px;
+}
+body .license .lic-name {
+  color: #056088;
+  font-weight: 500;
 }

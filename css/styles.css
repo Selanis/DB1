@@ -315,3 +315,109 @@ body .our-works .second-grid__item3 .works9 {
   background: url("../photo/works_9.png") center/cover;
   grid-column-start: span 2;
 }
+body .our-works .br {
+  width: 100%;
+  max-width: 1301px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 32px;
+}
+body .our-works .br hr {
+  width: 100%;
+  max-width: 715px;
+  height: 0px;
+  border: 1px solid #056088;
+}
+body .our-works .br .see-mr {
+  width: 158px;
+  height: 72px;
+  background: url("../photo/see_more_button.png");
+  border: none;
+  margin-left: 40px;
+}
+body .our-works .simple-grid {
+  margin-top: 105px;
+  display: grid;
+  grid-template-columns: 306px 24px 970px;
+  grid-template-rows: 401px;
+}
+body .our-works .simple-grid__item1 {
+  width: 100%;
+  height: 320px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding-left: 33px;
+}
+body .our-works .simple-grid__item1 h2 {
+  color: #056088;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 51px;
+}
+body .our-works .simple-grid__item1 .grid-p {
+  color: #434343;
+  margin-top: 16px;
+}
+body .our-works .simple-grid__item1 button {
+  width: 158px;
+  height: 72px;
+  background: url("../photo/see_more_button.png");
+  border: none;
+  margin-top: 32px;
+}
+body .our-works .simple-grid__item2 {
+  background-color: #FFFFFF;
+}
+body .our-works .simple-grid__item3 {
+  background: url("../photo/what_clients_say_img.png") center/cover, no-repeat;
+}
+body .mr-roberto {
+  width: 100%;
+  height: 100%;
+  max-width: 416px;
+  min-height: 266px;
+  margin-bottom: 100px;
+  background: url("../photo/mr_roberto-div.png") center/cover, no-repeat;
+  margin-top: -80px;
+}
+body .mr-roberto .div-img {
+  width: 102px;
+  height: 102px;
+  border-radius: 60px;
+  background-image: url("../photo/mr_roberto.png");
+  margin-top: -37px;
+  margin-left: -30px;
+}
+body .mr-roberto p {
+  font-style: italic;
+  padding-left: 50px;
+  padding-right: 24px;
+}
+body .mr-roberto h4 {
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding-left: 50px;
+  padding-right: 24px;
+}

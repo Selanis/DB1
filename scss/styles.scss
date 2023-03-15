@@ -289,8 +289,111 @@ body {
                     background: url('../photo/works_9.png') center/cover;
                     grid-column-start: span 2;
                 }
+            }         
+        }
+
+        .br {
+            width: 100%;
+            max-width: 1301px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            margin-top: 32px;
+
+            hr {
+                width: 100%;
+                max-width: 715px;
+                height: 0px;
+                border: 1px solid #056088;
+            }
+
+            .see-mr {
+                width: 158px;
+                height: 72px;
+                background: url('../photo/see_more_button.png');
+                border: none;
+                margin-left: 40px;
+            }
+        }
+
+        .simple-grid {
+            margin-top: 105px;
+            display: grid;
+            grid-template-columns: 306px 24px 970px;
+            grid-template-rows: 401px;
+
+            &__item1 {
+                width: 100%;
+                height: 320px;
+                background-color: #FFFFFF;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                text-align: left;
+                padding-left: 33px;
+
+                h2 {
+                    color: $blue_color;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-top: 51px;
+                }
+
+                .grid-p {
+                    color: $black_color;
+                    margin-top: 16px;
+                }
+
+                button {
+                    width: 158px;
+                height: 72px;
+                background: url('../photo/see_more_button.png');
+                border: none;
+                margin-top: 32px;
+                }
+            }
+
+            &__item2 {
+                background-color: #FFFFFF;
+            }
+
+            &__item3 {
+                background: url('../photo/what_clients_say_img.png') center/cover, no-repeat;
             }
         }
     }
 
+    .mr-roberto {
+        width: 100%;
+        height: 100%;
+        max-width: 416px;
+        min-height: 266px;
+        margin-bottom: 100px;
+        background: url('../photo/mr_roberto-div.png') center/cover, no-repeat;
+        margin-top: -80px;
+
+        .div-img {
+            width: 102px;
+            height: 102px;
+            border-radius: 60px;
+            background-image: url('../photo/mr_roberto.png');
+            margin-top: -37px;
+            margin-left: -30px;
+        }
+
+        p {
+            font-style: italic;
+            padding-left: 50px;
+            padding-right: 24px;
+        }
+
+        h4 {
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 16px;
+            padding-left: 50px;
+            padding-right: 24px;
+        }
+    }  
 }

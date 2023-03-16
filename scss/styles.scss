@@ -36,6 +36,8 @@ body {
             flex-direction: row;
             justify-content: space-between;
             margin-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
 
             p {
                 font-size: 66px;
@@ -99,30 +101,63 @@ body {
         // Первая сетка
         .img-grid1 {
             display: grid;
-            grid-template-columns: minmax(100px,310px) minmax(5px, 20px) minmax(100px, 310px);
-            grid-template-rows: repeat(104, 4px);
+            grid-template-columns: repeat(2, minmax(100px, 310px));
+            grid-template-rows: 419px;
+            gap: 20px;
 
-            &__item1 {
-                grid-row-start: span 60;
-                background: url('../photo/check_1.png') center/cover, no-repeat;
+            .img-grid11 {
+                display: grid;
+                grid-template-columns: minmax(100px, 310px);
+                grid-template-rows: 241px 158px;
+                gap: 20px;
+                
+                &__item1 {
+                    background: url('../photo/check_1.png') center/cover, no-repeat;
+                }
+
+                &__item2 {
+                    background: url('../photo/check_3.png') center/cover, no-repeat;
+                }
             }
 
-            &__item2 {
-                grid-row: 66 / 105;
-                background: url('../photo/check_3.png') center/cover, no-repeat;
+            .img-grid12 {
+                display: grid;
+                grid-template-columns: minmax(100px, 310px);
+                grid-template-rows: 158px 241px;
+                gap: 20px;
+                
+                &__item1 {
+                    background: url('../photo/check_2.png') center/cover, no-repeat;
+                }
+
+                &__item2 {
+                    background: url('../photo/check_4.png') center/cover, no-repeat;
+                }
             }
 
-            &__item3 {
-                grid-row: span 39;
-                grid-column: 3  / 4;
-                background: url('../photo/check_2.png') center/cover, no-repeat;
-            }
 
-            &__item4 {
-                grid-row: 45 / 105;
-                grid-column: 3 / 4;
-                background: url('../photo/check_4.png') center/cover, no-repeat;
-            }
+
+            // &__item1 {
+            //     grid-row-start: span 60;
+            //     background: url('../photo/check_1.png') center/cover, no-repeat;
+            // }
+
+            // &__item2 {
+            //     grid-row: 66 / 105;
+            //     background: url('../photo/check_3.png') center/cover, no-repeat;
+            // }
+
+            // &__item3 {
+            //     grid-row: span 39;
+            //     grid-column: 3  / 4;
+            //     background: url('../photo/check_2.png') center/cover, no-repeat;
+            // }
+
+            // &__item4 {
+            //     grid-row: 45 / 105;
+            //     grid-column: 3 / 4;
+            //     background: url('../photo/check_4.png') center/cover, no-repeat;
+            // }
         }
 
         .about-text {
@@ -460,3 +495,8 @@ body {
         margin-bottom: 32px;
     }
 }
+
+// Адаптив
+// @media screen (max-width: ) {
+
+// }

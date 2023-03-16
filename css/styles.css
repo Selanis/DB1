@@ -285,7 +285,7 @@ body .our-works .second-grid__item1 .works3 {
 }
 body .our-works .second-grid__item2 {
   display: grid;
-  grid-template-columns: 420px;
+  grid-template-columns: minmax(100px, 420px);
   grid-template-rows: 277px 163px;
   gap: 20px;
 }
@@ -349,7 +349,7 @@ body .our-works .br .see-mr {
 body .our-works .simple-grid {
   margin-top: 105px;
   display: grid;
-  grid-template-columns: 306px 24px 970px;
+  grid-template-columns: minmax(100px, 306px) minmax(10px, 24px) minmax(100px, 970px);
   grid-template-rows: 401px;
 }
 body .our-works .simple-grid__item1 {
@@ -392,7 +392,17 @@ body .our-works .simple-grid__item2 {
 body .our-works .simple-grid__item3 {
   background: url("../photo/what_clients_say_img.png") center/cover, no-repeat;
 }
-body .mr-roberto {
+body .roberto-div {
+  width: 100%;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+body .roberto-div .mr-roberto {
   width: 100%;
   height: 100%;
   max-width: 416px;
@@ -401,7 +411,7 @@ body .mr-roberto {
   background: url("../photo/mr_roberto-div.png") center/cover, no-repeat;
   margin-top: -80px;
 }
-body .mr-roberto .div-img {
+body .roberto-div .mr-roberto img {
   width: 102px;
   height: 102px;
   border-radius: 60px;
@@ -409,15 +419,60 @@ body .mr-roberto .div-img {
   margin-top: -37px;
   margin-left: -30px;
 }
-body .mr-roberto p {
+body .roberto-div .mr-roberto p {
   font-style: italic;
   padding-left: 50px;
   padding-right: 24px;
 }
-body .mr-roberto h4 {
+body .roberto-div .mr-roberto h4 {
   font-style: italic;
   font-weight: 600;
   margin-top: 16px;
   padding-left: 50px;
   padding-right: 24px;
+}
+body .footer {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  background-color: #023957;
+  display: grid;
+  grid-template-rows: 246px;
+  grid-template-columns: minmax(10px, 329px) repeat(3, minmax(10px, 220px)) 111px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+body .footer__item1 h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 66px;
+  font-weight: 700;
+}
+body .footer__item1 p {
+  margin-top: 16px;
+}
+body .footer__item1 button {
+  margin-top: 32px;
+  width: 152px;
+  height: 72px;
+  background: url("../photo/get_directions_button.png") center/cover, no-repeat;
+  border: none;
+}
+body .footer__item2 h6 {
+  font-weight: 700;
+  font-size: 24px;
+}
+body .footer__item2 ul {
+  list-style: none;
+  margin-top: 16px;
+}
+body .footer__item2 ul li {
+  margin-top: 16px;
+}
+body .last-p {
+  color: #434343;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }

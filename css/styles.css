@@ -41,7 +41,24 @@ body header {
       -ms-flex-align: center;
           align-items: center;
 }
-body header .nav {
+body header .main-nav {
+  width: 100%;
+  max-width: 1288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body header .main-nav .nav {
   width: 100%;
   max-width: 1288px;
   display: -webkit-box;
@@ -54,16 +71,14 @@ body header .nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
-body header .nav p {
+body header .main-nav .nav p {
   font-size: 66px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  padding-left: 40px;
 }
-body header .nav ul {
+body header .main-nav .nav ul {
   list-style: none;
   width: 100%;
   max-width: 532px;
@@ -76,6 +91,10 @@ body header .nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 15px;
+}
+body header .main-nav .burger-menu {
+  opacity: 0%;
 }
 body header .main-text {
   margin-top: 84px;
@@ -133,6 +152,7 @@ body .about-company .img-grid1 {
   grid-template-columns: repeat(2, minmax(100px, 310px));
   grid-template-rows: 419px;
   gap: 20px;
+  padding-left: 15px;
 }
 body .about-company .img-grid1 .img-grid11 {
   display: grid;
@@ -171,6 +191,8 @@ body .about-company .about-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 35px;
+  padding-left: 25px;
 }
 body .about-company .about-text h1 {
   color: #056088;
@@ -230,10 +252,10 @@ body .license {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   background-color: #FFFFFF;
-  left: -300px;
-  top: -290px;
+  position: relative;
+  margin-top: -300px;
+  margin-left: -39%;
 }
 body .license img {
   margin-top: -13px;
@@ -247,7 +269,7 @@ body .our-works {
   height: 100%;
   min-height: 1414px;
   background: url("../photo/our-works-bg.png") center/cover, no-repeat;
-  margin-top: -50px;
+  margin-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,4 +506,10 @@ body .last-p {
   color: #434343;
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+@media (min-width: 1650px) {
+  body .license {
+    margin-left: -575px;
+  }
 }

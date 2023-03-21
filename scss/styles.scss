@@ -29,30 +29,44 @@ body {
         align-items: center;
 
         // Навигация
-        .nav {
+        .main-nav {
+            width: 100%;
+            max-width: 1288px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .nav {
             width: 100%;
             max-width: 1288px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
 
-            p {
-                font-size: 66px;
-                font-family: "Roboto", sans-serif;
-                font-weight: 700;
+                p {
+                    font-size: 66px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+                    padding-left: 40px;
+                }
+    
+                // Текст навигации
+                ul {
+                    list-style: none;
+                    width: 100%;
+                    max-width: 532px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 15px;
+                }
             }
-
-            // Текст навигации
-            ul {
-                list-style: none;
-                width: 100%;
-                max-width: 532px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            
+            .burger-menu {
+                opacity: 0%;
             }
         }
 
@@ -104,6 +118,7 @@ body {
             grid-template-columns: repeat(2, minmax(100px, 310px));
             grid-template-rows: 419px;
             gap: 20px;
+            padding-left: 15px;
 
             .img-grid11 {
                 display: grid;
@@ -166,6 +181,8 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-right: 35px;
+            padding-left: 25px;
             
             h1 {
                 color: $blue_color;
@@ -219,11 +236,11 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        position: relative;
         background-color: #FFFFFF;
+        position: relative;
 
-        left: -300px;
-        top: -290px;
+        margin-top: -300px;
+        margin-left: -39%;
 
         
         img {
@@ -242,7 +259,7 @@ body {
         height: 100%;
         min-height: 1414px;
         background: url('../photo/our-works-bg.png') center/cover, no-repeat;
-        margin-top: -50px;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -497,6 +514,15 @@ body {
 }
 
 // Адаптив
-// @media screen (max-width: ) {
+@media (min-width: 1650px) {
+    body {
+        .license {
+            margin-left: -575px;
+        }
+    }
+    
+}
 
-// }
+@media (max-width: 1187px) {
+    
+}

@@ -36,8 +36,7 @@ body {
             flex-direction: row;
             align-items: center;
             margin-top: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
+            
 
             .nav {
             width: 100%;
@@ -45,6 +44,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
 
                 p {
                     font-size: 66px;
@@ -458,49 +458,56 @@ body {
         }
     }
     
-    .footer {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
         min-height: 380px;
         background-color: #023957;
-        display: grid;
-        grid-template-rows: 246px;
-        grid-template-columns: minmax(10px, 329px) repeat(3, minmax(10px ,220px)) 111px;
-        justify-content: center;
-        align-content: center;
 
-        &__item1 {
-            h5 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 66px;
-                font-weight: 700;
-            }
-
-            p {
-                margin-top: 16px;
-            }
-
-            button {
-                margin-top: 32px;
-                width: 152px;
-                height: 72px;
-                background: url('../photo/get_directions_button.png') center/cover, no-repeat;
-                border: none;
-            }
-        }
-
-        &__item2 {
-            h6 {
-                font-weight: 700;
-                font-size: 24px;
-            }
-
-            ul {
-                list-style: none;
-                margin-top: 16px;
-
-                li {
+        .footer {
+            display: grid;
+            grid-template-rows: 246px;
+            grid-template-columns: minmax(10px, 329px) repeat(3, minmax(10px ,220px)) 111px;
+            padding-left: 45px;
+            padding-right: 45px;
+    
+            &__item1 {
+                h5 {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 66px;
+                    font-weight: 700;
+                }
+    
+                p {
                     margin-top: 16px;
+                }
+    
+                button {
+                    margin-top: 32px;
+                    width: 152px;
+                    height: 72px;
+                    background: url('../photo/get_directions_button.png') center/cover, no-repeat;
+                    border: none;
+                }
+            }
+    
+            &__item2 {
+    
+                h6 {
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+    
+                ul {
+                    list-style: none;
+                    margin-top: 16px;
+    
+                    li {
+                        margin-top: 16px;
+                    }
                 }
             }
         }
@@ -523,6 +530,90 @@ body {
     
 }
 
-@media (max-width: 1187px) {
-    
+@media (max-width: 1188px) {
+    body {
+        .about-company {
+            display: flex;
+            justify-content: center;
+            .about-text {
+                padding-top: 25px;
+            }
+        }
+
+        .license {
+            margin-left: 0px;
+            margin-top: -650px;
+        }
+
+        .our-works {
+            margin-top: 550px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        header {
+            .main-text {
+                h1 {
+                    font-size: 45px;
+                    line-height: 71px
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    * {
+        font-size: 15px;
+    }
+
+    body {
+        header {
+            .main-text {
+                h1 {
+                    font-size: 38px;
+                    line-height: 57px
+                }
+            }
+        }
+
+        .our-works {
+            .second-grid {
+                grid-template-rows: repeat(3, 460px);
+                grid-template-columns: minmax(100px, 420px);
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        header {
+            .main-nav {
+                padding-right: 40px;
+                .nav {
+                    ul {
+                        width: 1px;
+                        opacity: 0%;
+                        
+                        li {
+                            width: 1px;
+                        }
+                    }
+                }
+
+                .burger-menu {
+                    opacity: 100%;
+                }
+            }
+            .main-text {
+                h1 {
+                    font-size: 31px;
+                    line-height: 48px
+                }
+            }
+        }
+    }
 }

@@ -55,8 +55,6 @@ body header .main-nav {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 body header .main-nav .nav {
   width: 100%;
@@ -462,44 +460,52 @@ body .roberto-div .mr-roberto h4 {
   padding-left: 50px;
   padding-right: 24px;
 }
-body .footer {
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   min-height: 380px;
   background-color: #023957;
+}
+body footer .footer {
   display: grid;
   grid-template-rows: 246px;
   grid-template-columns: minmax(10px, 329px) repeat(3, minmax(10px, 220px)) 111px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  padding-left: 45px;
+  padding-right: 45px;
 }
-body .footer__item1 h5 {
+body footer .footer__item1 h5 {
   font-family: "Roboto", sans-serif;
   font-size: 66px;
   font-weight: 700;
 }
-body .footer__item1 p {
+body footer .footer__item1 p {
   margin-top: 16px;
 }
-body .footer__item1 button {
+body footer .footer__item1 button {
   margin-top: 32px;
   width: 152px;
   height: 72px;
   background: url("../photo/get_directions_button.png") center/cover, no-repeat;
   border: none;
 }
-body .footer__item2 h6 {
+body footer .footer__item2 h6 {
   font-weight: 700;
   font-size: 24px;
 }
-body .footer__item2 ul {
+body footer .footer__item2 ul {
   list-style: none;
   margin-top: 16px;
 }
-body .footer__item2 ul li {
+body footer .footer__item2 ul li {
   margin-top: 16px;
 }
 body .last-p {
@@ -511,5 +517,63 @@ body .last-p {
 @media (min-width: 1650px) {
   body .license {
     margin-left: -575px;
+  }
+}
+@media (max-width: 1188px) {
+  body .about-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .about-company .about-text {
+    padding-top: 25px;
+  }
+  body .license {
+    margin-left: 0px;
+    margin-top: -650px;
+  }
+  body .our-works {
+    margin-top: 550px;
+  }
+}
+@media (max-width: 850px) {
+  body header .main-text h1 {
+    font-size: 45px;
+    line-height: 71px;
+  }
+}
+@media (max-width: 675px) {
+  * {
+    font-size: 15px;
+  }
+  body header .main-text h1 {
+    font-size: 38px;
+    line-height: 57px;
+  }
+  body .our-works .second-grid {
+    grid-template-rows: repeat(3, 460px);
+    grid-template-columns: minmax(100px, 420px);
+  }
+}
+@media (max-width: 550px) {
+  body header .main-nav {
+    padding-right: 40px;
+  }
+  body header .main-nav .nav ul {
+    width: 1px;
+    opacity: 0%;
+  }
+  body header .main-nav .nav ul li {
+    width: 1px;
+  }
+  body header .main-nav .burger-menu {
+    opacity: 100%;
+  }
+  body header .main-text h1 {
+    font-size: 31px;
+    line-height: 48px;
   }
 }

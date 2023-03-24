@@ -385,7 +385,6 @@ body .our-works .simple-grid {
   grid-template-rows: 401px;
 }
 body .our-works .simple-grid__item1 {
-  width: 100%;
   height: 320px;
   background-color: #FFFFFF;
   display: -webkit-box;
